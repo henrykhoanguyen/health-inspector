@@ -18,9 +18,9 @@ class ListItem extends React.Component {
 
     render () {
         let badge = YellowBadge
-        if (this.props.restaurants.results.toUpperCase() === 'Fail'.toUpperCase()){
+        if (this.props.restaurant.results.toUpperCase() === 'Fail'.toUpperCase()){
             badge = RedBadge
-        }else if (this.props.restaurants.results.toUpperCase() === 'Pass'.toUpperCase()){
+        }else if (this.props.restaurant.results.toUpperCase() === 'Pass'.toUpperCase()){
             badge = GreenBadge
         }
         let name = this.props.restaurant.aka_name
